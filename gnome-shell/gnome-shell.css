@@ -1,0 +1,218 @@
+/*==== ==== ==== GLOBALS ==== ==== ====*/
+
+stage {
+	font-size: 9.75pt;
+}
+
+/* ==== ==== ==== COMMON STYLINGS ==== ==== ==== */
+
+.workspace-switcher-container,
+.switcher-list,
+.resize-popup,
+.osd-window {
+	background-color:rgba(53, 53, 53, 0.9);
+	border: none;
+	border-radius: 10px;
+}
+
+.modal-dialog {
+	background-color: rgba(53, 53, 53, 0.9);
+	border: none;
+}
+
+/* ==== ==== ==== POPOVER ==== ==== ==== */
+
+.popup-menu-boxpointer,
+.candidate-popup-boxpointer {
+	-arrow-background-color: rgba(53, 53, 53, 0.95);
+	-arrow-border-color: transparent;
+	-arrow-border-width: 0px;
+}
+
+.popup-sub-menu {
+	background-color: #2d2d2d;
+}
+
+/* ==== ==== ==== NETWORK DIALOG ==== ==== ==== */
+
+.nm-dialog-scroll-view {
+	background-color: #2d2d2d;
+}
+
+/*==== ==== ==== TOP BAR ==== ==== ====*/
+
+#panel {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2), 0px 5px 16px rgba(0, 0, 0, 0.3);
+  font-family: 'monospace';
+  height: 28px;
+}
+
+#panel .panel-corner {
+	-panel-corner-radius: 0px;
+}
+
+#panel .panel-corner:active,
+#panel .panel-corner:overview,
+#panel .panel-corner:focus {
+	-panel-corner-border-color: transparent;
+}
+
+#panel .panel-button {
+	border-radius: 6px;
+	color: white;
+	transition-duration: 250ms;
+	text-shadow: 0px 2px 3px  rgba(0, 0, 0, 0.2);
+}
+
+#panel .panel-button:hover {
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+#panel .panel-button .system-status-icon {
+	icon-size: 1.2307692308em;
+	icon-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+#panel .panel-button:active,
+#panel .panel-button:overview,
+#panel .panel-button:focus,
+#panel .panel-button:checked {
+	background-color: /*Color azul de Adwaita #1f76e1*/ /*Color azul de Yaru remix*/#315bef;
+	box-shadow: none;
+	text-shadow: 0px 2px 3px  rgba(0, 0, 0, 0.2);
+}
+
+#panel .panel-button:active .system-status-icon,
+#panel .panel-button:overview .system-status-icon,
+#panel .panel-button:focus .system-status-icon,
+#panel .panel-button:checked .system-status-icon {
+	icon-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+#panel .panel-button.clock-display:active,
+#panel .panel-button.clock-display:overview,
+#panel .panel-button.clock-display:focus,
+#panel .panel-button.clock-display:checked {
+	background-color: #1f76e1;
+	box-shadow: none;
+}
+
+#panel .panel-button.clock-display:active .clock,
+#panel .panel-button.clock-display:overview .clock,
+#panel .panel-button.clock-display:focus .clock,
+#panel .panel-button.clock-display:checked .clock {
+	background-color: transparent;
+	box-shadow: none;;
+}
+
+/* ==== ==== ==== OVERVIEW ==== ==== ==== */
+
+.app-folder-dialog .folder-name-container .folder-name-entry, .search-entry {
+	background-color: rgba(53, 53, 53, 0.75);
+	border-radius: 10px;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.app-folder-dialog .folder-name-container .folder-name-entry:focus, .search-entry:focus {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.search-section-content {
+	background-color: rgba(53, 53, 53, 0.75);
+	border: none;
+}
+
+/* ==== ==== ==== DASH ==== ==== ==== */
+
+#dash {
+	background-color: rgba(53, 53, 53, 0.75);
+	border: none;
+	border-radius: 10px;
+	margin-left: 10px;
+	padding: 3px 0px;
+}
+
+.dash-item-container > StWidget {
+	padding: 3px 6px;
+}
+
+/* ==== ==== ==== APPS ==== ==== ==== */
+
+.app-folder .overview-icon {
+	background-color: rgba(53, 53, 53, 0.75);
+	transition-duration: 250ms;
+}
+
+.search-provider-icon,
+.list-search-result,
+.search-provider-icon .overview-icon,
+.grid-search-result .overview-icon,
+.show-apps .overview-icon,
+.app-well-app .overview-icon {
+	transition-duration: 250ms;
+}
+
+
+.search-provider-icon:hover,
+.search-provider-icon:focus,
+.search-provider-icon:selected,
+.list-search-result:hover,
+.list-search-result:focus,
+.list-search-result:selected {
+	background-color:rgba(255, 255, 255, 0.15);
+}
+
+.search-provider-icon:hover .overview-icon,
+.search-provider-icon:focus .overview-icon,
+.search-provider-icon:selected .overview-icon,
+.grid-search-result:hover .overview-icon,
+.grid-search-result:focus .overview-icon,
+.grid-search-result:selected .overview-icon,
+.show-apps:hover .overview-icon,
+.show-apps:focus .overview-icon,
+.show-apps:selected .overview-icon,
+.app-well-app:hover .overview-icon,
+.app-well-app:focus .overview-icon,
+.app-well-app:selected .overview-icon,
+.app-folder:hover .overview-icon {
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+.app-folder-dialog {
+	background-color: rgba(53, 53, 53, 0.75);
+	border: none;
+}
+
+.app-well-app-running-dot {
+	background-color: #eeeeec;
+	border-radius: 0px;
+	height: 2px;
+	margin-bottom: 1px;
+	width: 10px;
+}
+
+/* ==== ==== ==== WORKSPACE SWITCHER ==== ==== ==== */
+
+.workspace-thumbnails {
+	background-color: rgba(53, 53, 53, 0.75);
+	border: none;
+	border-radius: 10px;
+	margin-right: 10px;
+}
+
+.datemenu-calendar-column {
+  font-family: 'monospace';
+}
+
+.calendar {
+	background-color: rgba(0, 0, 0, 0);
+	box-shadow: none;
+	border: none;
+}
+
+.events-button,
+.message,
+.world-clocks-button,
+.weather-button {
+  background-color: #3c3c3c;
+}
