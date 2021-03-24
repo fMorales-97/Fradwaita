@@ -42,7 +42,7 @@ stage {
 /*==== ==== ==== TOP BAR ==== ==== ====*/
 
 #panel {
-  font-family: 'monospace';
+  /*font-family: 'monospace';*/
   height: 28px;
 }
 
@@ -199,9 +199,9 @@ stage {
 	margin-right: 10px;
 }
 
-.datemenu-calendar-column {
+/*.datemenu-calendar-column {
   font-family: 'monospace';
-}
+}*/
 
 .calendar {
 	background-color: rgba(0, 0, 0, 0);
