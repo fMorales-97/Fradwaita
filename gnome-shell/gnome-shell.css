@@ -42,7 +42,6 @@ stage {
 /*==== ==== ==== TOP BAR ==== ==== ====*/
 
 #panel {
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2), 0px 5px 16px rgba(0, 0, 0, 0.3);
   font-family: 'monospace';
   height: 28px;
 }
