@@ -92,7 +92,7 @@ stage {
 #panel .panel-button.clock-display:overview,
 #panel .panel-button.clock-display:focus,
 #panel .panel-button.clock-display:checked {
-	background-color: #1f76e1;
+	background-color: /*Color azul de Adwaita#1f76e1*/ /*Color azul de Yaru remix*/#315bef;
 	box-shadow: none;
 }
 
