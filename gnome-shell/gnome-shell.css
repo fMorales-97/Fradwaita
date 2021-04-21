@@ -42,7 +42,6 @@ stage {
 /*==== ==== ==== TOP BAR ==== ==== ====*/
 
 #panel {
-  /*font-family: 'monospace';*/
   height: 28px;
 }
 
@@ -58,13 +57,13 @@ stage {
 
 #panel .panel-button {
 	border-radius: 6px;
-	color: white;
+	color: #ccc;
 	transition-duration: 250ms;
 	text-shadow: 0px 2px 3px  rgba(0, 0, 0, 0.2);
 }
 
 #panel .panel-button:hover {
-	background-color: rgba(255, 255, 255, 0.15);
+	color: white;
 }
 
 #panel .panel-button .system-status-icon {
@@ -76,8 +75,9 @@ stage {
 #panel .panel-button:overview,
 #panel .panel-button:focus,
 #panel .panel-button:checked {
-	background-color: /*Color azul de Adwaita #1f76e1*/ /*Color azul de Yaru remix*/#315bef;
+	background-color: rgba(255, 255, 255, 0.15);
 	box-shadow: none;
+	color: white;
 	text-shadow: 0px 2px 3px  rgba(0, 0, 0, 0.2);
 }
 
@@ -92,8 +92,9 @@ stage {
 #panel .panel-button.clock-display:overview,
 #panel .panel-button.clock-display:focus,
 #panel .panel-button.clock-display:checked {
-	background-color: /*Color azul de Adwaita#1f76e1*/ /*Color azul de Yaru remix*/#315bef;
+	background-color: rgba(255, 255, 255, 0.15);
 	box-shadow: none;
+	color: white;
 }
 
 #panel .panel-button.clock-display:active .clock,
@@ -106,13 +107,19 @@ stage {
 
 /* ==== ==== ==== OVERVIEW ==== ==== ==== */
 
-.app-folder-dialog .folder-name-container .folder-name-entry, .search-entry {
+.app-folder-dialog .folder-name-container .folder-name-entry, 
+.search-entry {
 	background-color: rgba(53, 53, 53, 0.75);
 	border-radius: 10px;
+	border-color: rgba(49, 91, 239, 0);
 	color: rgba(255, 255, 255, 0.5);
+	transition-duration: 250ms;
 }
 
-.app-folder-dialog .folder-name-container .folder-name-entry:focus, .search-entry:focus {
+.app-folder-dialog .folder-name-container .folder-name-entry:focus, 
+.search-entry:focus {
+  box-shadow: none;
+  border-color: rgba(49, 91, 239, 1);
   color: rgba(255, 255, 255, 0.75);
 }
 
@@ -200,7 +207,7 @@ stage {
 }
 
 /*.datemenu-calendar-column {
-  font-family: 'monospace';
+
 }*/
 
 .calendar {
