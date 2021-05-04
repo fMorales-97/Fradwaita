@@ -11,13 +11,13 @@ stage {
 .resize-popup,
 .osd-window {
 	background-color:rgba(53, 53, 53, 0.9);
-	border: none;
+	border: 1px solid #474747;
 	border-radius: 10px;
 }
 
 .modal-dialog {
 	background-color: rgba(53, 53, 53, 0.9);
-	border: none;
+	border: 1px solid #474747;
 }
 
 /* ==== ==== ==== POPOVER ==== ==== ==== */
@@ -25,8 +25,8 @@ stage {
 .popup-menu-boxpointer,
 .candidate-popup-boxpointer {
 	-arrow-background-color: rgba(53, 53, 53, 0.95);
-	-arrow-border-color: transparent;
-	-arrow-border-width: 0px;
+	-arrow-border-color: #474747;
+	-arrow-border-width: 1px;
 }
 
 .popup-sub-menu {
@@ -111,7 +111,7 @@ stage {
 .search-entry {
 	background-color: rgba(53, 53, 53, 0.75);
 	border-radius: 10px;
-	border-color: rgba(49, 91, 239, 0);
+	border-color: #474747;
 	color: rgba(255, 255, 255, 0.5);
 	transition-duration: 250ms;
 }
@@ -119,20 +119,20 @@ stage {
 .app-folder-dialog .folder-name-container .folder-name-entry:focus, 
 .search-entry:focus {
   box-shadow: none;
-  border-color: rgba(49, 91, 239, 1);
+  border-color: #1f76e1;
   color: rgba(255, 255, 255, 0.75);
 }
 
 .search-section-content {
 	background-color: rgba(53, 53, 53, 0.75);
-	border: none;
+	border: 1px solid #474747;
 }
 
 /* ==== ==== ==== DASH ==== ==== ==== */
 
 #dash {
 	background-color: rgba(53, 53, 53, 0.75);
-	border: none;
+	border: 1px solid #474747;
 	border-radius: 10px;
 	margin-left: 10px;
 	padding: 3px 0px;
@@ -146,6 +146,7 @@ stage {
 
 .app-folder .overview-icon {
 	background-color: rgba(53, 53, 53, 0.75);
+	border: 1px solid #474747;
 	transition-duration: 250ms;
 }
 
@@ -186,7 +187,7 @@ stage {
 
 .app-folder-dialog {
 	background-color: rgba(53, 53, 53, 0.75);
-	border: none;
+	border: 1px solid #474747;
 }
 
 .app-well-app-running-dot {
@@ -201,7 +202,7 @@ stage {
 
 .workspace-thumbnails {
 	background-color: rgba(53, 53, 53, 0.75);
-	border: none;
+	border: 1px solid #474747;
 	border-radius: 10px;
 	margin-right: 10px;
 }
