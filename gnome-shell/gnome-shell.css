@@ -75,7 +75,7 @@ stage {
 #panel .panel-button:overview,
 #panel .panel-button:focus,
 #panel .panel-button:checked {
-	background-color: rgba(255, 255, 255, 0.15);
+	background-color: rgba(255, 255, 255, 0.2);
 	box-shadow: none;
 	color: white;
 	text-shadow: 0px 2px 3px  rgba(0, 0, 0, 0.2);
@@ -92,7 +92,7 @@ stage {
 #panel .panel-button.clock-display:overview,
 #panel .panel-button.clock-display:focus,
 #panel .panel-button.clock-display:checked {
-	background-color: rgba(255, 255, 255, 0.15);
+	background-color: rgba(255, 255, 255, 0.2);
 	box-shadow: none;
 	color: white;
 }
@@ -166,7 +166,7 @@ stage {
 .list-search-result:hover,
 .list-search-result:focus,
 .list-search-result:selected {
-	background-color:rgba(255, 255, 255, 0.15);
+	background-color:rgba(255, 255, 255, 0.2);
 }
 
 .search-provider-icon:hover .overview-icon,
@@ -182,7 +182,7 @@ stage {
 .app-well-app:focus .overview-icon,
 .app-well-app:selected .overview-icon,
 .app-folder:hover .overview-icon {
-	background-color: rgba(255, 255, 255, 0.15);
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
 .app-folder-dialog {
