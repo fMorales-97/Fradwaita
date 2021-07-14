@@ -10,13 +10,13 @@ stage {
 .switcher-list,
 .resize-popup,
 .osd-window {
-	background-color:rgba(53, 53, 53, 0.9);
+	background-color:rgba(53, 53, 53, 0.95);
 	border: 1px solid #474747;
 	border-radius: 10px;
 }
 
 .modal-dialog {
-	background-color: rgba(53, 53, 53, 0.9);
+	background-color: rgba(53, 53, 53, 0.95);
 	border: 1px solid #474747;
 }
 
@@ -24,7 +24,7 @@ stage {
 
 .popup-menu-boxpointer,
 .candidate-popup-boxpointer {
-	-arrow-background-color: rgba(53, 53, 53, 0.95);
+	-arrow-background-color: rgba(53, 53, 53, 0.975);
 	-arrow-border-color: #474747;
 	-arrow-border-width: 1px;
 }
