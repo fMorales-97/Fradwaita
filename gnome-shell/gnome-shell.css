@@ -8,9 +8,15 @@ stage {
 
 .workspace-switcher-container,
 .switcher-list,
-.modal-dialog,
 .resize-popup,
 .osd-window {
+	background-color:rgba(53, 53, 53, 0.95);
+	border: 1px solid #474747;
+	border-radius: 10px;
+}
+
+.modal-dialog {
+	background-color: rgba(53, 53, 53, 0.95);
 	border: 1px solid #474747;
 }
 
@@ -43,6 +49,22 @@ stage {
 	-panel-corner-radius: 0px;
 }
 
+#panel .panel-corner:active,
+#panel .panel-corner:overview,
+#panel .panel-corner:focus {
+	-panel-corner-border-color: transparent;
+}
+
+#panel .panel-button {
+	border-radius: 6px;
+	color: #ccc;
+	text-shadow: 0px 2px 3px  rgba(0, 0, 0, 0.2);
+}
+
+#panel .panel-button:hover {
+	color: white;
+}
+
 #panel .panel-button .system-status-icon {
 	icon-size: 1.2307692308em;
 	icon-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
@@ -52,6 +74,8 @@ stage {
 #panel .panel-button:overview,
 #panel .panel-button:focus,
 #panel .panel-button:checked {
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: none;
 	color: white;
 	text-shadow: 0px 2px 3px  rgba(0, 0, 0, 0.2);
 }
@@ -67,26 +91,60 @@ stage {
 #panel .panel-button.clock-display:overview,
 #panel .panel-button.clock-display:focus,
 #panel .panel-button.clock-display:checked {
+	background-color: rgba(255, 255, 255, 0.2);
 	box-shadow: none;
 	color: white;
 }
 
+#panel .panel-button.clock-display:active .clock,
+#panel .panel-button.clock-display:overview .clock,
+#panel .panel-button.clock-display:focus .clock,
+#panel .panel-button.clock-display:checked .clock {
+	background-color: transparent;
+	box-shadow: none;;
+}
+
 /* ==== ==== ==== OVERVIEW ==== ==== ==== */
 
+.app-folder-dialog .folder-name-container .folder-name-entry, 
 .search-entry {
+	background-color: rgba(53, 53, 53, 0.75);
+	border-radius: 10px;
+	border-color: #474747;
 	color: rgba(255, 255, 255, 0.5);
 	transition-duration: 250ms;
 }
 
+.app-folder-dialog .folder-name-container .folder-name-entry:focus, 
 .search-entry:focus {
   box-shadow: none;
+  border-color: #1f76e1;
   color: rgba(255, 255, 255, 0.75);
+}
+
+.search-section-content {
+	background-color: rgba(53, 53, 53, 0.75);
+	border: 1px solid #474747;
+}
+
+/* ==== ==== ==== DASH ==== ==== ==== */
+
+#dash {
+	background-color: rgba(53, 53, 53, 0.75);
+	border: 1px solid #474747;
+	border-radius: 10px;
+	margin-left: 10px;
+	padding: 3px 0px;
+}
+
+.dash-item-container > StWidget {
+	padding: 3px 6px;
 }
 
 /* ==== ==== ==== APPS ==== ==== ==== */
 
 .app-folder .overview-icon {
-  background-color: rgba(53, 53, 53, 0.75);
+	background-color: rgba(53, 53, 53, 0.75);
 	border: 1px solid #474747;
 	transition-duration: 250ms;
 }
@@ -140,6 +198,13 @@ stage {
 }
 
 /* ==== ==== ==== WORKSPACE SWITCHER ==== ==== ==== */
+
+.workspace-thumbnails {
+	background-color: rgba(53, 53, 53, 0.75);
+	border: 1px solid #474747;
+	border-radius: 10px;
+	margin-right: 10px;
+}
 
 /*.datemenu-calendar-column {
 
